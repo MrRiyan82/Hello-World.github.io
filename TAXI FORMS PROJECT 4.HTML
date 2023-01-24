@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<title>forms</title>
+</head>
+<body background="taxi 1.jpg">
+<h1>TAXI BOOKING FORM</h1>
+<form name="my form">
+Name:<input type="text" name="customer name"required>
+<br>
+<br>
+Phone:<input type="tel"  name="Phone number">
+<br>
+<br>
+Email:<input type="email" name="Email Address">
+<br>
+<br>
+<h3>Which taxi do you required?</h3>
+<input type="radio" name="Taxi" value="car" checked> Car<br>
+<p><label><input type="radio" name="Taxi" value="Van"> Van<br>
+<p><label><input type="radio" name="Taxi" value="tuk Tuk"> Tuk Tuk<br>
+
+<h3>Extra</h3>
+<p><label><input type="checkbox" name="extra" value="baby">Baby Seat</label></p>
+<p><label><input type="checkbox" name="extra" value="wheel chair">Wheel Chair</label></p>
+<p><label><input type="checkbox" name="extra" value="tip">Tip</label></p>
+
+<h3>pickup date/time</h3>
+
+<input type="date" name="pickup date/time">
+<br>
+
+<h3>pickup place</h3>
+
+<select id="pickup place" name="pickup place">
+<option value="selected">Select One</option>
+<option value="taxi office">Taxi Office</option>
+<option value="town hall">Town Hall</option>
+<option value="telepathy">well guess</option>
+</select>
+<br>
+<br>
+
+<h3>Dropoff palce</h3>
+<input type="text" name="Dropoff place" requried list="destinations">
+<datalist Id="destinations">
+<option value="Airport">
+<option value="Neach">
+<option value="Fries Flinstone House">
+</datalist>
+<br>
+
+<h3>special instruction</h3>
+<textarea name="comments" maxlength="500px" row="50" cols="30"></textarea>
+<br><br>
+<button>submit booking</button>
+
+</form>
+
+</body>
+</html>
